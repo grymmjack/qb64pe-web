@@ -1,0 +1,32 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+nav img {
+    height: 3rem;
+}
+nav strong {
+    color: var(--pico-h1-color);
+    position: relative;
+    top: 0.5rem;
+}
+nav small {
+    font-size: small;
+}
+footer {
+    text-align: center;
+}
+button.small {
+    font-size: medium;
+    padding: 0.15rem 1rem;
+    position: relative;
+    top: -0.1rem;
+}
+[data-tooltip]:not(a, button, input) {
+    border-bottom: none !important;
+}
+hgroup#hero img {
+    height: 8rem;
+    margin: 0 2rem;
+}
+footer {
+    color: var(--pico-muted-color) !important;
+}
