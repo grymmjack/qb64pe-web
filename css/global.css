@@ -15,8 +15,8 @@ footer {
     text-align: center;
 }
 button.small {
-    font-size: medium;
-    padding: 0.15rem 1rem;
+    font-size: smaller;
+    padding: 0.15rem 0.5rem;
     position: relative;
     top: -0.1rem;
 }
@@ -29,4 +29,42 @@ hgroup#hero img {
 }
 footer {
     color: var(--pico-muted-color) !important;
+}
+
+ul.icon-bullets li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul.icon-bullets li i {
+    margin: 0.5rem 0.25rem;
+}
+ul.social li a {
+    font-size: small;
+    text-align: center;
+}
+
+section {
+    padding: 0.5rem;
+}
+section div {
+    padding: 0.5rem;
+}
+div.screenshots {
+    text-align: center;
+}
+div.screenshots img {
+    width: 20rem;
+    margin: 1rem;
+}
+
+blockquote.clean {
+    border: 0;
+    border: 1px solid var(--pico-muted-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+p.vspace {
+    margin: 2rem 0;
 }
