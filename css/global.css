@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/* variables */
+:root {
+    --hero-image-height: 10rem;
+    --screenshot-width: 8rem;
+}
+
 @media screen and (max-width: 1000px) {
     ul.social li a span {
         display: none;
@@ -64,8 +71,7 @@ button.small {
 }
 
 #hero img {
-    height: 10rem;
-    /* margin: 0 1rem; */
+    height: var(--hero-image-height);
 }
 
 #hero hgroup {
@@ -76,20 +82,13 @@ footer {
     color: var(--pico-muted-color);
 }
 
-ul.icon-bullets li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: smaller;
-}
-
-ul.icon-bullets li i {
-    margin: 0.5rem 0.25rem;
-}
-
 ul.social li a {
     font-size: small;
     text-align: center;
+}
+
+ul.social li a:hover {
+    text-decoration: none;
 }
 
 section {
@@ -104,25 +103,31 @@ div.screenshots {
     text-align: center;
 }
 
-div.screenshots img {
-    display: inline-block;
-    padding: 0.15rem;
-    background: var(--pico-muted-border-color);
-    width: 15rem;
-    margin: 0.5rem 1rem;
+#screenshots figure {
+    width: calc(var(--screenshot-width) + (var(--pico-spacing)*2));
 }
 
-div.screenshots a:link img, 
-div.screenshots a:visited img {
-    border: 3px solid;
-    border-radius: 0.25rem;
-    border-color: var(--pico-text-selection-color);
+#screenshots figcaption {
+    color: var(--pico-primary-underline);
+    font-size: small;
+    text-align: left;
+    line-height: 0.85rem
 }
 
-div.screenshots a:hover img {
-    border: 3px solid;
-    border-radius: 0.25rem;
-    border-color: var(--pico-contrast-hover-border);
+#screenshots figure img {
+    padding: calc(var(--pico-spacing) / 4);
+    border-radius: var(--pico-border-radius);
+    border: 3px solid var(--pico-muted-border-color);
+}
+
+#screenshots figure a:link img, 
+#screenshots figure a:visited img {
+    border-color: var(--pico-muted-border-color);
+}
+
+#screenshots figure a:hover img, 
+#screenshots figure a:active img {
+    border: 3px solid var(--pico-contrast-hover-border);
 }
 
 blockquote.clean {
@@ -189,6 +194,9 @@ p i.fa {
 }
 .center {
     text-align: center;
+}
+.left {
+    text-align: left;
 }
 .right {
     text-align: right;
