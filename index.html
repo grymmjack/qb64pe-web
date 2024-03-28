@@ -7,13 +7,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">    
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.blue.min.css">
+    <link rel="stylesheet" href="css/pico.blue.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
     <title>QB64 PE (Phoenix Edition)</title>
   </head>
   <body>
     <main class="container">
+
         <header>
             <nav>
                 <ul>
@@ -25,92 +28,103 @@
                     <li><a href="#">Contribute</a></li>
                 </ul>
                 <ul class="social">
-                    <li><a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-                    <li><a href="https://qb64phoenix.com/qb64wiki" class="social-icon"><i class="fa fa-book" aria-hidden="true"></i> Wiki</a></li>
-                    <li><a href="https://qb64phoenix.com" class="social-icon"><i class="fa fa-comments" aria-hidden="true"></i> Forum</a></li>
-                    <li><a href="https://discord.gg/RxwYKeRA" class="social-icon"><i class="fa fa-gamepad" aria-hidden="true"></i> Discord</a></li>
-                    <li><a href="https://www.reddit.com/r/QB64pe/" class="social-icon"><i class="fa fa-reddit" aria-hidden="true"></i> Reddit</a></li>
-                    <li><a href="https://www.patreon.com/user?u=86544769" class="social-icon"><i class="fa fa-handshake-o" aria-hidden="true"></i> Patreon</a></li>
+                    <li><a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon"><i class="fa fa-github" aria-hidden="true" title="GitHub"></i><span> GitHub</span></a></li>
+                    <li><a href="https://qb64phoenix.com/qb64wiki" class="social-icon"><i class="fa fa-book" aria-hidden="true" title="Wiki"></i><span> Wiki</span></a></li>
+                    <li><a href="https://qb64phoenix.com" class="social-icon"><i class="fa fa-comments" aria-hidden="true" title="Forum"></i><span> Forum</span></a></li>
+                    <li><a href="https://discord.gg/RxwYKeRA" class="social-icon"><i class="fa fa-gamepad" aria-hidden="true" title="Discord"></i><span> Discord</span></a></li>
+                    <li><a href="https://www.reddit.com/r/QB64pe/" class="social-icon"><i class="fa fa-reddit" aria-hidden="true" title="Reddit"></i><span> Reddit</span></a></li>
+                    <li><a href="https://www.patreon.com/user?u=86544769" class="social-icon"><i class="fa fa-handshake-o" aria-hidden="true" title="Patreon"></i><span> Patreon</span></a></li>
                 </ul>
             </nav>
         </header>
+
         <article>
-            <div class="grid">
-                <div class="row">
-                    <div>
-                        <hgroup id="hero">
-                            <img src="images/qb64pe.svg" style="height: 8rem; float: left;">
-                            <h1>QB64 PE (Phoenix Edition)</h1>
-                            <h4>
-                                Modern Cross-Platform BASIC<br />
-                                compatible with QBasic and QuickBasic 4.x
-                            </h4>
-                            <p style="margin-top: 1rem;">
-                                Available now for
-                                <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-windows" aria-hidden="true"></i> Windows</button></a>
-                                <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-apple" aria-hidden="true"></i> MacOS</button></a>
-                                <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-linux" aria-hidden="true"></i> Linux</button></a>
-                            </p>
-                            </p>
-                        </hgroup>
-                        <blockquote>
-                            <p>
-                                <small style="color: var(--pico-muted-color)">
-                                    QB64 is a modern extended BASIC programming language with embedded OpenGL support that retains QuickBASIC 4.5 and QBasic compatibility and compiles native binaries for Windows (Vista and up), Linux and macOS.
-                                </small>
-                            </p>
-                        </blockquote>
-                    </div>
+            <div class="row" id="hero">
+                <div class="col-sm-3 center">
+                    <img src="images/qb64pe.svg">
+                </div>
+                <div class="col-sm-9">
+                    <hgroup>
+                        <h1>QB64 PE<br class="hide-mobile"> <span class="group">(Phoenix Edition)</span></h1>
+                        <h4>
+                            Modern Cross-Platform BASIC
+                            compatible with <span class="group">QBasic and QuickBasic 4.x</span>
+                        </h4>
+                        <p class="small-vspace">
+                            <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-windows fa-fw" aria-hidden="true"></i> Windows</button></a>
+                            <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-apple fa-fw" aria-hidden="true"></i> macOS</button></a>
+                            <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-linux fa-fw" aria-hidden="true"></i> Linux</button></a>
+                        </p>
+                    </hgroup>
                 </div>
             </div>
         </article>
-        <section>
-            <div class="grid">
-                <div>
-                    <p style="float: left; margin: 0 1rem;">
-                        <i class="fa fa-cogs" aria-hidden="true" style="font-size: 5rem"></i>
-                    </p>
-                    <p>
-                        Build using a <strong>Retro IDE</strong> extended with helpful tools and utilities or <strong>any text editor</strong>, or <strong><em>both!</em></strong>
-                    </p>
-                    <hr>
-                    <p class="vspace">
-                        <small>
-                            <em>
-                                Includes a built-in IDE created in the spirit of the original MS-DOS version featuring:
-                            </em>
-                        </small>
-                    </p>
-                    <ul class="icon-bullets">
-                        <li><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Realtime Line Input Error Checking</li>
-                        <li><i class="fa fa-book" aria-hidden="true"></i> Online and Offline Help System</li>
-                        <li><i class="fa fa-eyedropper" aria-hidden="true"></i> Syntax Highlighting</li>
-                        <li><i class="fa fa-search" aria-hidden="true"></i> Powerful Debugging Facilities</li>
-                        <li><i class="fa fa-pencil" aria-hidden="true"></i> Custom color themes</li>
-                        <li><i class="fa fa-table" aria-hidden="true"></i> ASCII Character Table</li>
-                        <li><i class="fa fa-wrench" aria-hidden="true"></i> ...and much more!</li>
-                    </ul>
-                    <blockquote class="clean">
-                        <small>
-                            <em style="color: var(--pico-muted-color)">
-                                You can also take QB64 PE into the future using other modern editors like Visual Studio Code, Notepad++, etc. Even better, combine and use both the built-in IDE and your editor of choice for even more flexibility!
-                            </em>
-                        </small>
-                    </blockquote>
-                </div>
-                <div class="screenshots">
-                    <img alt="QB64 PE IDE" src="images/screenshot-ide.png">
-                    <img alt="Visual Studio Code with QB64 Extension" src="images/screenshot-vscode.png">
-                </div>
+
+        <p class="vspace">
+            <small class="muted">
+                QB64 is a modern extended BASIC programming language with embedded OpenGL support
+                that retains <span class="group">QuickBASIC 4.5 and QBasic</span> compatibility and <strong class="standout">compiles</strong>
+                native binaries for
+                <span class="group"><i class="fa fa-windows" aria-hidden="true"></i> Windows (Vista and up)</span>,
+                <span class="group"><i class="fa fa-linux" aria-hidden="true"></i> Linux</span>, and
+                <span class="group"><i class="fa fa-apple" aria-hidden="true"></i> macOS</span>.
+            </small>
+        </p>
+
+        <p class="vspace"></p>
+
+        <div class="grid">
+            <div>
+                <p>
+                    <i class="fa fa-cogs fa-3x fa-pull-left tall nudge-up" aria-hidden="true"></i>
+                    Build using a <strong>Retro IDE</strong> extended with helpful tools and utilities or
+                    <strong>any text editor</strong>, or <strong><em>both!</em></strong>
+                </p>
+                <p class="small-vspace">
+                    <small>
+                        <em>
+                            Includes a built-in IDE created in the spirit of the original MS-DOS version featuring:
+                        </em>
+                    </small>
+                </p>
+                <ul class="icon-bullets">
+                    <li><i class="fa fa-exclamation-triangle fa-fw" aria-hidden="true"></i> Realtime Input Error Checking</li>
+                    <li><i class="fa fa-book fa-fw" aria-hidden="true"></i> Online and Offline Help System</li>
+                    <li><i class="fa fa-eyedropper fa-fw" aria-hidden="true"></i> Syntax Highlighting</li>
+                    <li><i class="fa fa-check fa-fw" aria-hidden="true"></i> Automatic Source Formatting</li>
+                    <li><i class="fa fa-search fa-fw" aria-hidden="true"></i> Powerful Debugging Facilities</li>
+                    <li><i class="fa fa-pencil fa-fw" aria-hidden="true"></i> Custom color themes</li>
+                    <li><i class="fa fa-table fa-fw" aria-hidden="true"></i> ASCII Character Table</li>
+                    <li><i class="fa fa-calculator fa-fw" aria-hidden="true"></i> Math Evaluator</li>
+                    <li><i class="fa fa-keyboard-o fa-fw" aria-hidden="true"></i> Key Code Inserter</li>
+                    <li><i class="fa fa-plus fa-fw" aria-hidden="true"></i> ...and much more!</li>
+                </ul>
+                <blockquote class="clean">
+                    <small>
+                        <em class="muted">
+                            You can also take QB64 PE into the future using other modern editors like
+                            <a href="https://www.youtube.com/watch?v=6kn-N_-eycg">Visual Studio Code</a>,
+                            <a href="https://qb64phoenix.com/forum/showthread.php?tid=86&highlight=notepad%2B%2B">Notepad++</a>, etc.
+                            Even better, combine and use both the built-in IDE and your editor of choice for even more flexibility!
+                        </em>
+                    </small>
+                </blockquote>
             </div>
-        </section>
+            <div class="screenshots">
+                <a href="images/screenshot-ide.png"><img alt="QB64 PE IDE" src="images/screenshot-ide.png"></a>
+                <a href="images/screenshot-vscode.png"><img alt="Visual Studio Code with QB64 Extension" src="images/screenshot-vscode.png"></a>
+                <a href="images/screenshot-notepad++.png"><img alt="Notepad++ with Customization by RhoSigma" src="images/screenshot-notepad++.png"></a>
+            </div>
+        </div>
+
+        <p class="vspace"></p>
+
         <footer>
-            <div class="grid">
-                <div>
-                    <small>Made with &hearts; by <a href="https://github.com/grymmjack">grymmjack</a> for <a href="#">QB64 PE (Phoenix Edition)</a></small>
-                </div>
-            </div>
+            <article>
+                <small>Made with &hearts; by <a href="https://github.com/grymmjack">grymmjack</a> for <a href="#">QB64 PE (Phoenix Edition)</a></small>
+            </article>
         </footer>
+        
     </main>
   </body>
 </html>

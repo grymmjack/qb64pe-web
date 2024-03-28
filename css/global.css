@@ -1,44 +1,92 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+@media screen and (max-width: 1000px) {
+    ul.social li a span {
+        display: none;
+    }
+    #hero img {
+        float: none;
+    }
+    .show-mobile {
+        display: inline-block;
+    }
+}
+
+/* extra small */
+@media (min-width: 575px) {
+}
+/* small */
+@media (min-width: 576px) {
+}
+/* medium */
+@media (min-width: 768px) {
+}
+/* large */
+@media (min-width: 1024px) {
+}
+/* extra large */
+@media (min-width: 1280px) {
+}
+/* extra extra large */
+@media (min-width: 1536px) {
+}
+
+.hide-mobile {
+    display: none;
+}
 
 nav img {
     height: 3rem;
 }
+
 nav strong {
     color: var(--pico-h1-color);
     position: relative;
     top: 0.5rem;
 }
+
 nav small {
     font-size: small;
 }
+
 footer {
     text-align: center;
 }
+
 button.small {
     font-size: smaller;
-    padding: 0.15rem 0.5rem;
+    padding: 0.15rem 1rem;
     position: relative;
+    margin-right: 0.5rem;
     top: -0.1rem;
 }
+
 [data-tooltip]:not(a, button, input) {
-    border-bottom: none !important;
+    border-bottom: none;
 }
-hgroup#hero img {
-    height: 8rem;
-    margin: 0 2rem;
+
+#hero img {
+    height: 10rem;
+    /* margin: 0 1rem; */
 }
+
+#hero hgroup {
+    margin: 1rem 0;
+}
+
 footer {
-    color: var(--pico-muted-color) !important;
+    color: var(--pico-muted-color);
 }
 
 ul.icon-bullets li {
     padding: 0;
     margin: 0;
     list-style: none;
+    font-size: smaller;
 }
+
 ul.icon-bullets li i {
     margin: 0.5rem 0.25rem;
 }
+
 ul.social li a {
     font-size: small;
     text-align: center;
@@ -47,24 +95,107 @@ ul.social li a {
 section {
     padding: 0.5rem;
 }
+
 section div {
     padding: 0.5rem;
 }
+
 div.screenshots {
     text-align: center;
 }
+
 div.screenshots img {
-    width: 20rem;
-    margin: 1rem;
+    display: inline-block;
+    padding: 0.15rem;
+    background: var(--pico-muted-border-color);
+    width: 15rem;
+    margin: 0.5rem 1rem;
+}
+
+div.screenshots a:link img, 
+div.screenshots a:visited img {
+    border: 3px solid;
+    border-radius: 0.25rem;
+    border-color: var(--pico-text-selection-color);
+}
+
+div.screenshots a:hover img {
+    border: 3px solid;
+    border-radius: 0.25rem;
+    border-color: var(--pico-contrast-hover-border);
 }
 
 blockquote.clean {
-    border: 0;
-    border: 1px solid var(--pico-muted-color);
-    border-radius: 0.5rem;
     padding: 1rem;
 }
 
-p.vspace {
+p i.fa {
+    margin-left: 0.25rem;
+}
+
+/* utility classes */
+.vspace {
+    clear: left;
     margin: 2rem 0;
+}
+.small-vspace {
+    margin: 1rem 0;
+}
+.hspace {
+    padding: 0 1rem;
+}
+.vcondensed {
+    margin: 0 auto;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+.muted {
+    color: var(--pico-muted-color);
+}
+.standout {
+    color: var(--pico-h6-color);
+    text-decoration: underline;
+}
+.group {
+    white-space: nowrap;
+}
+.quoted {
+    border-left: 3px solid var(--pico-muted-border-color);
+    padding: 0.25rem 1rem;
+    font-style: oblique;
+    font-size: larger;
+    line-height: 1.5rem;
+}
+.float {
+    float: left;
+}
+.clear {
+    clear: left;
+}
+.nudge-down {
+    margin-top: 0.75rem;
+}
+.nudge-right {
+    margin-left: 0.5rem;
+}
+.nudge-up {
+    position: relative;
+    top: -0.5rem;
+}
+.hug {
+    margin: 0 0 3rem 0;
+    font-size: 3rem;
+    padding: 0 1rem;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.wide {
+    width: 80%;
+}
+.tall {
+    line-height: 4rem;
 }
