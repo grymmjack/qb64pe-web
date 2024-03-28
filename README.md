@@ -9,12 +9,9 @@ We opted to use minimal HTML and CSS only, with no JavaScript and are using:
 
 More to come, stay tuned.
 
-Screen shot as of 3/27/24:
+### Screen shot as of 3/28/24:
 
 Dark theme:
-![image](https://github.com/grymmjack/qb64pe-web/assets/412263/3d5beaf2-1b99-4ea2-8858-a13b60dcd388)
-
-Light theme:
-![image](https://github.com/grymmjack/qb64pe-web/assets/412263/db5123aa-6ad1-4386-9262-27be9d8f6acb)
+![image](images/screenshot-design-index.png)
 
 The themes will auto-detect based on user preference thanks to Pico CSS ;)
