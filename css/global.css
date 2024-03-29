@@ -12,7 +12,8 @@
 }
 
 
-/* media queries */
+/* small device viewport stuff */
+/* there also are media queries adjacent to the declarations lower in file */
 @media (max-width: 500px) {
     .hide-small {
         display: none;
@@ -69,6 +70,13 @@ button.small {
     margin-right: 0.5rem;
     top: -0.1rem;
 }
+button.tiny {
+    color: var(--pico-muted-color);
+    font-size: x-small;
+    padding: 0 0.30rem;
+    position: relative;
+    top: -0.1rem;
+}
 @media (max-width: 500px) {
     button.small {
         font-size: x-small;
@@ -113,6 +121,20 @@ button.small {
 }
 
 
+/* icon header */
+.icon-header {
+    color: var(--pico-primary);
+}
+.icon-header i {
+    float: left;
+    color: var(--pico-primary-hover);
+    font-size: 3rem;
+    vertical-align: middle;
+    margin: 0 0 2rem 0;
+    padding: 0 1rem;
+}
+
+
 /* media */
 #screenshots figure {
     width: var(--screenshot-width);
@@ -145,10 +167,30 @@ figure a:active img {
 }
 .muted {
     color: var(--pico-muted-color);
+    border-color: var(--pico-muted-color);
+}
+.very-muted {
+    color: var(--pico-muted-color);
+    border-color: var(--pico-muted-color);
+    opacity: 0.75;
 }
 .group {
     white-space: nowrap;
 }
 .spacer {
+    clear: left;
     opacity: 0;
+}
+.spacer-small {
+    clear: left;
+    margin: calc(var(--pico-spacing) / 4) 0;
+    opacity: 0;
+}
+.spacer-tiny {
+    clear: left;
+    margin: calc(var(--pico-spacing) / 12) 0;
+    opacity: 0;
+}
+.indented {
+    margin-left: 3rem;
 }
