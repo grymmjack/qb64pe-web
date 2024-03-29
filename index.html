@@ -8,10 +8,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/pico.blue.css">
-    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global.css?version=0.46">
+    <link rel="stylesheet" href="css/pico.blue.min.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <title>QB64 PE (Phoenix Edition)</title>
   </head>
   <body>
@@ -23,34 +23,30 @@
                     <li><a href="#"><img src="images/qb64pe.svg"></a></li>
                     <li><button>Download</button></a></li>
                     <li><a href="#">Learn</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">Resources</a></li>
                 </ul>
                 <ul class="social">
-                    <li><a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span> GitHub</span></a></li>
-                    <li><a href="https://qb64phoenix.com/qb64wiki" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i><span> Wiki</span></a></li>
-                    <li><a href="https://qb64phoenix.com" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i><span> Forum</span></a></li>
-                    <li><a href="https://discord.gg/RxwYKeRA" class="social-icon"><i class="fa fa-gamepad fa-fw" aria-hidden="true" title="Discord"></i><span> Discord</span></a></li>
-                    <li><a href="https://www.reddit.com/r/QB64pe/" class="social-icon"><i class="fa fa-reddit fa-fw" aria-hidden="true" title="Reddit"></i><span> Reddit</span></a></li>
-                    <li><a href="https://www.patreon.com/user?u=86544769" class="social-icon"><i class="fa fa-handshake-o fa-fw" aria-hidden="true" title="Patreon"></i><span> Patreon</span></a></li>
+                    <li><a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></a></li>
+                    <li><a href="https://qb64phoenix.com/qb64wiki" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i><span class="hide-small"> Wiki</span></a></li>
+                    <li><a href="https://qb64phoenix.com" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i><span class="hide-small"> Forum</span></a></li>
                 </ul>
             </nav>
         </header>
 
-        <article>
-            <div class="row" id="hero">
-                <div class="col-sm-3 center">
+        <article id="hero">
+            <div class="row around-xs">
+                <div class="col-sm-3 brand">
                     <img src="images/qb64pe.svg">
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-9 details">
                     <hgroup>
-                        <h1>QB64 PE<br class="hide-mobile"> <span class="group">(Phoenix Edition)</span></h1>
-                        <p>
+                        <h1>QB64 PE <small>(Phoenix Edition)</small></h1>
+                        <p class="muted">
                             Modern Cross-Platform BASIC
                             compatible with <span class="group">QBasic and QuickBASIC 4.5</span>
                         </p>
-                        <p class="small-vspace">
+                        <p>&nbsp;</p>
+                        <p>
                             <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-windows fa-fw" aria-hidden="true"></i> Windows</button></a>
                             <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-apple fa-fw" aria-hidden="true"></i> macOS</button></a>
                             <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-linux fa-fw" aria-hidden="true"></i> Linux</button></a>
@@ -60,27 +56,28 @@
             </div>
         </article>
 
-        <p class="vspace">
+        <p>
             <small class="muted">
                 QB64 is a modern extended BASIC programming language with embedded OpenGL support
-                that retains <span class="group">QuickBASIC 4.5 and QBasic</span> compatibility and <strong class="standout">compiles</strong>
-                native binaries for
+                that retains <span class="group">QuickBASIC 4.5 and QBasic</span> compatibility and 
+                <strong><em>compiles</em></strong> native binaries for
                 <span class="group"><i class="fa fa-windows" aria-hidden="true"></i> Windows (Vista and up)</span>,
                 <span class="group"><i class="fa fa-linux" aria-hidden="true"></i> Linux</span>, and
                 <span class="group"><i class="fa fa-apple" aria-hidden="true"></i> macOS</span>.
             </small>
         </p>
 
-        <p class="vspace"></p>
+        <hr class="spacer">
 
         <div class="grid">
             <div>
                 <p>
-                    <i class="fa fa-cogs fa-3x fa-pull-left tall nudge-up" aria-hidden="true"></i>
+                    <i class="fa fa-cogs fa-4x fa-pull-left" aria-hidden="true"></i>
                     Build using a <strong>Retro IDE</strong> extended with helpful tools and utilities or
                     <strong>any text editor</strong>, or <strong><em>both!</em></strong>
                 </p>
-                <p class="small-vspace">
+                <hr class="spacer">
+                <p>
                     <small>
                         <em>
                             Includes a built-in IDE created in the spirit of the original MS-DOS version featuring:
@@ -116,14 +113,6 @@
                     <figcaption>QB64 PE IDE with QBasic Original Theme</figcaption>
                 </figure>
                 <figure>
-                    <a href="images/screenshot-vscode.png"><img alt="Visual Studio Code with QB64 Extension" src="images/screenshot-vscode.png"></a>
-                    <figcaption>Visual Studio Code with QB64 Extension and Custom Theme</figcaption>
-                </figure>
-                <figure>
-                    <a href="images/screenshot-notepad++.png"><img alt="Notepad++ with Customization by RhoSigma" src="images/screenshot-notepad++.png"></a>
-                    <figcaption>Notepad++ with Custom Integration by RhoSigma</figcaption>
-                </figure>
-                <figure>
                     <a href="images/screenshot-ide-debugger.png"><img alt="Debugger with watches at breakpoint" src="images/screenshot-ide-debugger.png"></a>
                     <figcaption>Debugger with watches at breakpoint</figcaption>
                 </figure>
@@ -135,15 +124,33 @@
                     <a href="images/screenshot-ide-compiler-settings.png"><img alt="IDE Compiler Settings" src="images/screenshot-ide-compiler-settings.png"></a>
                     <figcaption>IDE Compiler Settings</figcaption>
                 </figure>
+                <figure>
+                    <a href="images/screenshot-vscode.png"><img alt="Visual Studio Code with QB64 Extension" src="images/screenshot-vscode.png"></a>
+                    <figcaption>Visual Studio Code with QB64 Extension and Custom Theme</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/screenshot-notepad++.png"><img alt="Notepad++ with Customization by RhoSigma" src="images/screenshot-notepad++.png"></a>
+                    <figcaption>Notepad++ with Custom Integration by RhoSigma</figcaption>
+                </figure>
             </div>
         </div>
 
-        <p class="vspace"></p>
-
         <footer>
             <article>
-                <small>Made with &hearts; by <a href="https://github.com/grymmjack">grymmjack</a> for <a href="#">QB64 PE (Phoenix Edition)</a></small>
+                <div class="social">
+                    <span class="group">
+                        <a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i> GitHub</a>
+                        <a href="https://qb64phoenix.com/qb64wiki" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i> Wiki</a>
+                        <a href="https://qb64phoenix.com" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i> Forum</a>
+                    </span>
+                    <span class="group">
+                        <a href="https://discord.gg/RxwYKeRA" class="social-icon"><i class="fa fa-gamepad fa-fw" aria-hidden="true" title="Discord"></i> Discord</a>
+                        <a href="https://www.reddit.com/r/QB64pe/" class="social-icon"><i class="fa fa-reddit fa-fw" aria-hidden="true" title="Reddit"></i> Reddit</a>
+                        <a href="https://www.patreon.com/user?u=86544769" class="social-icon"><i class="fa fa-handshake-o fa-fw" aria-hidden="true" title="Patreon"></i> Patreon</a>
+                    </span>
+                </div>
             </article>
+            <small>Made with &hearts; by <a href="https://github.com/grymmjack">grymmjack</a></small>
         </footer>
         
     </main>
