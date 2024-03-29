@@ -8,7 +8,7 @@
     --figure-caption-font-size: small;
     --figure-image-border-size: 3px;
     --figure-image-padding: calc(var(--pico-spacing) / 4);
-    --screenshot-width: 8rem;
+    --screenshot-width: 9rem;
 }
 
 
@@ -26,7 +26,7 @@ nav img {
     height: 3rem;
 }
 /* hide text for social icons when small screen */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     nav .social li a span {
         display: none;
     }
@@ -63,11 +63,25 @@ footer small {
 
 /* buttons */
 button.small {
-    font-size: smaller;
+    font-size: small;
     padding: 0.15rem 1rem;
     position: relative;
     margin-right: 0.5rem;
     top: -0.1rem;
+}
+@media (max-width: 500px) {
+    button.small {
+        font-size: x-small;
+        margin: 0.1rem;
+        padding: 0.15rem 0.5rem;
+    }
+}
+@media (max-width: 319px) {
+    button.small {
+        font-size: xx-small;
+        margin: 0.1rem;
+        padding: 0.15rem 0.5rem;
+    }
 }
 [data-tooltip]:not(a, button, input) {
     border-bottom: none;
@@ -101,7 +115,7 @@ button.small {
 
 /* media */
 #screenshots figure {
-    width: calc(var(--screenshot-width) + (var(--pico-spacing) * 2));
+    width: var(--screenshot-width);
 }
 figcaption {
     color: var(--pico-primary-underline);

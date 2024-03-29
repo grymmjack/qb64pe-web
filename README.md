@@ -8,10 +8,3 @@ We opted to use minimal HTML and CSS only, with no JavaScript and are using:
 - [Font Awesome v4.x](https://fontawesome.com/v4/icon/home)
 
 More to come, stay tuned.
-
-### Screen shot as of 3/28/24:
-
-Dark theme:
-![image](images/screenshot-design-index.png)
-
-The themes will auto-detect based on user preference thanks to Pico CSS ;)
