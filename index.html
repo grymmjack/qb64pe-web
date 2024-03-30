@@ -1,78 +1,19 @@
 ---
+title: "Home"
+type: website
+layout: index
+image: /images/og/site.png
 ---
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="color-scheme" content="light dark">
-        <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | prepend: site.baseurl | prepend: site.url }}">
-        <link rel="manifest" href="{{ "/site.webmanifest" | prepend: site.baseurl | prepend: site.url }}">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/global.css?version=0.52">
-        <link rel="stylesheet" href="css/pico.blue.min.css">
-        <link rel="stylesheet" href="css/flexboxgrid.min.css">
-        <title>{{site.title}}</title>
-    </head>
+{% include head.html %}
 <body>
     <main class="container">
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/"><img src="images/qb64pe.svg"></a></li>
-                    <li><a href="{{site.links.releases}}"><button>Download</button></a></li>
-                </ul>
-                <ul class="social hide-small">
-                    <li class="group"><a href="{{site.links.github}}" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></a></li>
-                    <li class="group"><a href="{{site.links.wiki}}" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i><span class="hide-small"> Wiki</span></a></li>
-                    <li class="group"><a href="{{site.links.forum}}" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i><span class="hide-small"> Forum</span></a></li>
-                </ul>
-            </nav>
-        </header>
+{% include nav.html %}
+{% include hero.html %}
 
-        <article id="hero">
-            <div class="row around-xs">
-                <div class="col-sm-3 brand">
-                    <img src="images/qb64pe.svg">
-                </div>
-                <div class="col-sm-9 details">
-                    <hgroup>
-                        <h1>QB64 PE <small class="group">(Phoenix Edition)</small></h1>
-                        <p class="muted">
-                            Modern Cross-Platform BASIC
-                            compatible with <span class="group">QBasic and QuickBASIC 4.5</span>
-                        </p>
-                        <hr class="spacer-small">
-                        <p>
-                            <a href="{{site.links.downloads.win64 | replace: '$version', site.latest_version }}"><button class="outline small"><i class="fa fa-windows fa-fw" aria-hidden="true"></i> Windows</button></a>
-                            <a href="{{site.links.downloads.macos | replace: '$version', site.latest_version }}"><button class="outline small"><i class="fa fa-apple fa-fw" aria-hidden="true"></i> macOS</button></a>
-                            <a href="{{site.links.downloads.linux | replace: '$version', site.latest_version }}"><button class="outline small"><i class="fa fa-linux fa-fw" aria-hidden="true"></i> Linux</button></a>
-                        </p>
-                        <hr class="spacer-small">
-                        <p>
-                            <small class="very-muted">&hellip;or get the latest from 
-                            <a href="{{site.links.github}}" class="social-icon group"><button class="outline tiny muted"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></button></a>
-                            and build it yourself!</small>
-                        </p>
-                    </hgroup>
-                </div>
-            </div>
-        </article>
-
-        <p>
-            <small class="muted">
-                QB64 is a modern extended BASIC programming language with embedded OpenGL support
-                that retains <span class="group">QuickBASIC 4.5 and QBasic</span> compatibility and 
-                <strong><em>compiles</em></strong> native binaries for
-                <span class="group"><i class="fa fa-windows" aria-hidden="true"></i> Windows (Vista and up)</span>,
-                <span class="group"><i class="fa fa-linux" aria-hidden="true"></i> Linux</span>, and
-                <span class="group"><i class="fa fa-apple" aria-hidden="true"></i> macOS</span>.
-            </small>
-        </p>
+{% include tagline.html %}
 
         <hr class="spacer">
 
@@ -142,24 +83,7 @@
             </div>
         </div>
 
-        <footer>
-            <article>
-                <div class="social">
-                    <span class="group">
-                        <a href="{{site.links.github}}" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i> GitHub</a>
-                        <a href="{{site.links.wiki}}" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i> Wiki</a>
-                        <a href="{{site.links.forum}}" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i> Forum</a>
-                    </span>
-                    <span class="group">
-                        <a href="{{site.links.discord}}" class="social-icon"><i class="fa fa-gamepad fa-fw" aria-hidden="true" title="Discord"></i> Discord</a>
-                        <a href="{{site.links.reddit}}" class="social-icon"><i class="fa fa-reddit fa-fw" aria-hidden="true" title="Reddit"></i> Reddit</a>
-                        <a href="{{site.links.patreon}}" class="social-icon"><i class="fa fa-handshake-o fa-fw" aria-hidden="true" title="Patreon"></i> Patreon</a>
-                    </span>
-                </div>
-            </article>
-            <small>Made with &hearts; by <a href="{{site.links.webmaster}}">grymmjack</a></small>
-        </footer>
-        
+{% include footer.html %}        
     </main>
   </body>
 </html>
