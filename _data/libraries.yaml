@@ -1,0 +1,24 @@
+- name: Toolbox64
+  description: A740g's collection of libraries for QB64-PE 
+  creator: a740g
+  maintainer: a740g
+  web: https://github.com/a740g/Toolbox64
+  docs: https://github.com/a740g/Toolbox64
+  github: https://github.com/a740g/Toolbox64
+
+- name: QB64Library
+  description: A collection of useful libraries for QB64 
+  creator: RhoSigma-QB64
+  maintainer: RhoSigma-QB64
+  web: https://github.com/RhoSigma-QB64/QB64Library
+  docs: https://htmlpreview.github.io/?https://github.com/RhoSigma-QB64/QB64Library/blob/main/QB64Library/QB64Library-Info.html
+  github: https://github.com/RhoSigma-QB64/QB64Library
+
+- name: QB64_GJ_LIB
+  description:  GRYMMJACK'S QB64 LIBRARY
+  creator: grymmjack
+  maintainer: grymmjack
+  web: https://github.com/grymmjack/QB64_GJ_LIB
+  docs: https://github.com/grymmjack/QB64_GJ_LIB
+  github: https://github.com/grymmjack/QB64_GJ_LIB
+
