@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
     <head>
@@ -12,7 +14,7 @@
         <link rel="stylesheet" href="css/global.css?version=0.52">
         <link rel="stylesheet" href="css/pico.blue.min.css">
         <link rel="stylesheet" href="css/flexboxgrid.min.css">
-        <title>QB64 PE (Phoenix Edition)</title>
+        <title>{{site.title}}</title>
     </head>
 <body>
     <main class="container">
@@ -26,9 +28,9 @@
                     <li><a href="#">Resources</a></li>
                 </ul>
                 <ul class="social hide-small">
-                    <li class="group"><a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></a></li>
-                    <li class="group"><a href="https://qb64phoenix.com/qb64wiki" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i><span class="hide-small"> Wiki</span></a></li>
-                    <li class="group"><a href="https://qb64phoenix.com" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i><span class="hide-small"> Forum</span></a></li>
+                    <li class="group"><a href="{{site.links.github}}" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></a></li>
+                    <li class="group"><a href="{{site.links.wiki}}" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i><span class="hide-small"> Wiki</span></a></li>
+                    <li class="group"><a href="{{site.links.forum}}" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i><span class="hide-small"> Forum</span></a></li>
                 </ul>
             </nav>
         </header>
@@ -47,14 +49,14 @@
                         </p>
                         <hr class="spacer-small">
                         <p>
-                            <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-windows fa-fw" aria-hidden="true"></i> Windows</button></a>
-                            <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-apple fa-fw" aria-hidden="true"></i> macOS</button></a>
-                            <a href="https://github.com/QB64-Phoenix-Edition/QB64pe/releases"><button class="outline small"><i class="fa fa-linux fa-fw" aria-hidden="true"></i> Linux</button></a>
+                            <a href="{{site.links.downloads.win64 | replace: '$version', site.latest_version }}"><button class="outline small"><i class="fa fa-windows fa-fw" aria-hidden="true"></i> Windows</button></a>
+                            <a href="{{site.links.downloads.macos | replace: '$version', site.latest_version }}"><button class="outline small"><i class="fa fa-apple fa-fw" aria-hidden="true"></i> macOS</button></a>
+                            <a href="{{site.links.downloads.linux | replace: '$version', site.latest_version }}"><button class="outline small"><i class="fa fa-linux fa-fw" aria-hidden="true"></i> Linux</button></a>
                         </p>
                         <hr class="spacer-small">
                         <p>
                             <small class="very-muted">&hellip;or get the latest from 
-                            <a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon group"><button class="outline tiny muted"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></button></a>
+                            <a href="{{site.links.github}}" class="social-icon group"><button class="outline tiny muted"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></button></a>
                             and build it yourself!</small>
                         </p>
                     </hgroup>
@@ -106,8 +108,8 @@
                     <small>
                         <em class="muted">
                             You can also take QB64 PE into the future using other modern editors like
-                            <a href="https://www.youtube.com/watch?v=6kn-N_-eycg">Visual Studio Code</a>,
-                            <a href="https://qb64phoenix.com/forum/showthread.php?tid=86&highlight=notepad%2B%2B">Notepad++</a>, etc.
+                            <a href="{{site.links.integrations.vscode}}">Visual Studio Code</a>,
+                            <a href="{{site.links.integrations.notepadplusplus}}">Notepad++</a>, etc.
                             Even better, combine and use both the built-in IDE and your editor of choice for even more flexibility!
                         </em>
                     </small>
@@ -145,18 +147,18 @@
             <article>
                 <div class="social">
                     <span class="group">
-                        <a href="https://github.com/QB64-Phoenix-Edition/QB64pe" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i> GitHub</a>
-                        <a href="https://qb64phoenix.com/qb64wiki" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i> Wiki</a>
-                        <a href="https://qb64phoenix.com" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i> Forum</a>
+                        <a href="{{site.links.github}}" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i> GitHub</a>
+                        <a href="{{site.links.wiki}}" class="social-icon"><i class="fa fa-book fa-fw" aria-hidden="true" title="Wiki"></i> Wiki</a>
+                        <a href="{{site.links.forum}}" class="social-icon"><i class="fa fa-comments fa-fw" aria-hidden="true" title="Forum"></i> Forum</a>
                     </span>
                     <span class="group">
-                        <a href="https://discord.gg/RxwYKeRA" class="social-icon"><i class="fa fa-gamepad fa-fw" aria-hidden="true" title="Discord"></i> Discord</a>
-                        <a href="https://www.reddit.com/r/QB64pe/" class="social-icon"><i class="fa fa-reddit fa-fw" aria-hidden="true" title="Reddit"></i> Reddit</a>
-                        <a href="https://www.patreon.com/user?u=86544769" class="social-icon"><i class="fa fa-handshake-o fa-fw" aria-hidden="true" title="Patreon"></i> Patreon</a>
+                        <a href="{{site.links.discord}}" class="social-icon"><i class="fa fa-gamepad fa-fw" aria-hidden="true" title="Discord"></i> Discord</a>
+                        <a href="{{site.links.reddit}}" class="social-icon"><i class="fa fa-reddit fa-fw" aria-hidden="true" title="Reddit"></i> Reddit</a>
+                        <a href="{{site.links.patreon}}" class="social-icon"><i class="fa fa-handshake-o fa-fw" aria-hidden="true" title="Patreon"></i> Patreon</a>
                     </span>
                 </div>
             </article>
-            <small>Made with &hearts; by <a href="https://github.com/grymmjack">grymmjack</a></small>
+            <small>Made with &hearts; by <a href="{{site.links.webmaster}}">grymmjack</a></small>
         </footer>
         
     </main>
