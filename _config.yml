@@ -30,6 +30,25 @@ twitter_username: grymmjack
 github_username:  grymmjack
 ignore_theme_config: true
 
+latest_version: 3.12.0
+
+links:
+  github: https://github.com/QB64-Phoenix-Edition/QB64pe
+  wiki: https://qb64phoenix.com/qb64wiki
+  forum: https://qb64phoenix.com/
+  discord: https://discord.gg/RxwYKeRA
+  reddit: https://www.reddit.com/r/QB64pe/
+  patreon: https://www.patreon.com/user?u=86544769
+  webmaster: https://github.com/grymmjack
+  downloads:
+    win32: https://github.com/QB64-Phoenix-Edition/QB64pe/releases/download/v$version/qb64pe_win-x86-$version.7z 
+    win64: https://github.com/QB64-Phoenix-Edition/QB64pe/releases/download/v$version/qb64pe_win-x64-$version.7z
+    macos: https://github.com/QB64-Phoenix-Edition/QB64pe/releases/download/v$version/qb64pe_osx-$version.tar.gz
+    linux: https://github.com/QB64-Phoenix-Edition/QB64pe/releases/download/v$version/qb64pe_lnx-$version.tar.gz
+  integrations:
+    vscode: https://www.youtube.com/watch?v=6kn-N_-eycg
+    notepadplusplus: https://qb64phoenix.com/forum/showthread.php?tid=86&highlight=notepad%2B%2B
+
 # Build settings
 theme: minima
 plugins:
