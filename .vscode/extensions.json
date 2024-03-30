@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "github.vscode-github-actions",
+        "ginfuru.ginfuru-vscode-jekyll-syntax",
+        "redhat.vscode-yaml",
+        "sissel.shopify-liquid",
+        "sanaajani.taskrunnercode"
+    ]
+}

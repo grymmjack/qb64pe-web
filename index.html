@@ -6,10 +6,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="color-scheme" content="light dark">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="manifest" href="{{ "/site.webmanifest" | prepend: site.baseurl | prepend: site.url }}">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/global.css?version=0.52">
         <link rel="stylesheet" href="css/pico.blue.min.css">
@@ -22,10 +23,8 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="#"><img src="images/qb64pe.svg"></a></li>
-                    <li><button>Download</button></a></li>
-                    <li><a href="#">Learn</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="/"><img src="images/qb64pe.svg"></a></li>
+                    <li><a href="{{site.links.releases}}"><button>Download</button></a></li>
                 </ul>
                 <ul class="social hide-small">
                     <li class="group"><a href="{{site.links.github}}" class="social-icon"><i class="fa fa-github fa-fw" aria-hidden="true" title="GitHub"></i><span class="hide-small"> GitHub</span></a></li>

@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   QB64 is a modern extended BASIC programming language with embedded OpenGL support
   that retains QuickBASIC 4.5 and QBasic compatibility and compiles native binaries 
   for Windows (Vista and up), Linux, and macOS.  
-baseurl: "/qb64pe-web" # the subpath of your site, e.g. /blog
-url: "https://grymmjack.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://qb64pe.grymmjack.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: grymmjack
 github_username:  grymmjack
 ignore_theme_config: true
@@ -34,6 +34,7 @@ latest_version: 3.12.0
 
 links:
   github: https://github.com/QB64-Phoenix-Edition/QB64pe
+  releases: https://github.com/QB64-Phoenix-Edition/QB64pe/releases/latest
   wiki: https://qb64phoenix.com/qb64wiki
   forum: https://qb64phoenix.com/
   discord: https://discord.gg/RxwYKeRA
@@ -50,7 +51,7 @@ links:
     notepadplusplus: https://qb64phoenix.com/forum/showthread.php?tid=86&highlight=notepad%2B%2B
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 

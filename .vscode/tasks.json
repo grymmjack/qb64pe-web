@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Bundler Install",
+            "command": "bundler",
+            "type": "shell",
+            "args": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Jekyll: Build",
+            "dependsOn": "Bundler Install",
+            "command": "jekyll build --trace",
+            "type": "shell",
+            "args": [],
+            "presentation": {
+                "reveal": "always"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Jekyll: Serve",
+            "dependsOn": "Jekyll: Build",
+            "command": "jekyll serve -o",
+            "type": "shell",
+            "args": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Open in Browser",
+            "dependsOn": "Jekyll: Serve",
+            "command": "open http://127.0.0.1:4000",
+            "type": "shell",
+            "args": [],
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}

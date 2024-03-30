@@ -1,4 +1,4 @@
-.vscode
+.vscode/sftp.json
 _site
 .sass-cache
 .jekyll-cache
