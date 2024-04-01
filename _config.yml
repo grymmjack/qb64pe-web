@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   that retains QuickBASIC 4.5 and QBasic compatibility and compiles native binaries
   for Windows (Vista and up), Linux, and macOS.  
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://qb64pe.grymmjack.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.qb64phoenix.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: grymmjack
 github_username:  grymmjack
 ignore_theme_config: true
