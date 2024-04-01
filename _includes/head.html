@@ -2,16 +2,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <link rel="shortcut icon" href="{{ "favicon.ico" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:type" content="{% if page.type != null %}{{ page.type }}{% elsif page.layout == "post" %}article{% else %}website{% endif %}">
     <meta property="og:title" content="{% if page.title != null %}{{ page.title }} - {% endif %}{{site.title}}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:image" content="{% if page.image != null %}{{ page.image }}{% else %}/images/og/site.png{% endif %}">    
-    <link rel="manifest" href="{{ "site.webmanifest" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="manifest" href="{{ "/site.webmanifest" | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/global.css?version=0.52">
     <link rel="stylesheet" href="css/pico.blue.min.css">
